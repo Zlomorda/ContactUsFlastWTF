@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contsct</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form method="POST" action="{{ url_for('home') }}"> {{ form.csrf_token }} <p> {{ form.name.label }} <br /> {{ form.name }} </p>
+            <p> {{ form.email.label }} <br /> {{ form.email }} </p>
+            <p> {{ form.message.label }} <br /> {{ form.message}} </p> {{ form.submit }}
+        </form>
+    </div>
+</body>
+
+</html>
